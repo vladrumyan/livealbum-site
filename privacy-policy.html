@@ -39,7 +39,7 @@
 <main>
 
 <h1>Live Album – Privacy Policy</h1>
-<p class="meta">Effective 11 October 2026 · Applies to the Live Album app for Android (<code>com.livealbum.app</code>)</p>
+<p class="meta">Effective 18 October 2026 · Applies to the Live Album app for Android (<code>com.livealbum.app</code>)</p>
 
 <div class="summary">
   <ul>
@@ -67,6 +67,7 @@
 
 <h3>Albums you choose to share</h3>
 <p>When you export an album, the app creates a <code>.livealbum</code> file containing the album's media, its details, and the identifiers of the NFC tags linked to its pages (so the recipient's phone can recognise the same stickers). The file goes only where you send it, using the app or service you pick (for example a messaging app or cloud drive). That service's own privacy policy then applies.</p>
+<p>If you use <strong>Send to a nearby phone</strong>, the album file goes directly from your phone to the other phone using Google Play services' Nearby Connections (Bluetooth to find the other phone, then Wi-Fi). It doesn't go through the internet or any server, and we receive nothing. Each phone sees the other's device name while connecting, and both show the same code so you can check you're sending to the right phone.</p>
 
 <h3>Crash reports (Firebase Crashlytics)</h3>
 <p>If the app crashes, or runs into an error it recovers from (for example, an album file that can't be imported), it sends a report to <strong>Firebase Crashlytics</strong>, a service provided by Google, which processes it on our behalf. A report contains:</p>
@@ -121,12 +122,13 @@
 <table>
   <tr><th>Permission</th><th>Why</th></tr>
   <tr><td>NFC</td><td>Read and write the NFC stickers in your album.</td></tr>
+  <tr><td>Nearby devices (Bluetooth, Wi-Fi); location on Android 12 and older</td><td>Only for "Send to a nearby phone" and "Receive from a nearby phone": to find the other phone and transfer the album directly. Never used to work out your location. Older Android versions require the location permission for Bluetooth scanning.</td></tr>
   <tr><td>Internet and network state</td><td>Play online videos and audio, send crash reports, and talk to Google Play for purchases.</td></tr>
   <tr><td>Vibrate</td><td>Short vibration when a sticker is tapped.</td></tr>
   <tr><td>Google Play billing</td><td>Buy and restore Live Album Pro.</td></tr>
 </table>
 </div>
-<p>The app does not request access to your contacts, location, camera or microphone. Media is only accessed when you pick it using Android's file and photo pickers.</p>
+<p>The app does not request access to your contacts, camera or microphone, and never uses your location (the location permission is only requested on Android 12 and older, because those versions require it for Bluetooth scanning). Media is only accessed when you pick it using Android's file and photo pickers.</p>
 
 <h2>10. Changes to this policy</h2>
 <p>If we change this policy, we will update this page and the effective date above. Significant changes will also be noted in the app's update notes.</p>
