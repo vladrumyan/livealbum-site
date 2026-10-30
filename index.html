@@ -3,67 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Live Album</title>
-<meta name="description" content="Live Album: bring printed photo albums to life with NFC stickers. Android app.">
-<style>
-  :root {
-    --bg: #fafaf9; --fg: #1c1917; --muted: #57534e; --rule: #e7e5e4; --accent: #a16207;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0c0a09; --fg: #f5f5f4; --muted: #a8a29e; --rule: #292524; --accent: #d4af37; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--fg);
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    padding: 32px 16px 64px;
-  }
-  main { max-width: 720px; margin: 0 auto; }
-  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
-  h3 { font-size: 1rem; margin: 24px 0 4px; }
-  p, li { color: var(--muted); }
-  strong { color: var(--fg); }
-  a { color: var(--accent); }
-  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 24px; }
-  .summary { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin: 24px 0; }
-  .summary li { margin: 4px 0; }
-  .table-wrap { overflow-x: auto; }
-  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
-  th, td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); }
-  th { color: var(--fg); }
-  td { color: var(--muted); }
-  .lead { font-size: 1.15rem; color: var(--fg); margin: 8px 0 24px; }
-  .play { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 12px 20px; border-radius: 12px; font-weight: 600; }
-  nav a { margin-right: 20px; }
-</style>
+<title>Live Album – NFC photo album app for Android</title>
+<meta name="description" content="Bring printed photo albums to life: put a small NFC sticker behind a photo and hold your Android phone over it to play its video, voice note or music. No account, works offline.">
+<link rel="canonical" href="https://vladrumyan.github.io/livealbum-site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Live Album">
+<meta property="og:title" content="Live Album – NFC photo album app for Android">
+<meta property="og:description" content="Hold your phone over a printed photo and it plays the video, voice note or music behind it.">
+<meta property="og:url" content="https://vladrumyan.github.io/livealbum-site/">
+<meta property="og:image" content="https://vladrumyan.github.io/livealbum-site/assets/feature.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Live Album: NFC Photo Album",
+  "operatingSystem": "Android",
+  "applicationCategory": "PhotographyApplication",
+  "description": "Bring printed photo albums to life with NFC stickers: hold your phone over a photo to play its video, slideshow with music or voice note.",
+  "url": "https://vladrumyan.github.io/livealbum-site/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.livealbum.app",
+  "image": "https://vladrumyan.github.io/livealbum-site/assets/feature.jpg",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+}
+</script>
 </head>
 <body>
 <main>
 
-<h1>Live Album</h1>
-<p class="lead">Bring your printed photo albums to life. Put a small NFC sticker behind a photo, link it to a video, a slideshow with music or a voice message, and hold your phone over the photo to play it.</p>
+<header class="site-header">
+  <a class="brand" href="./"><img src="assets/icon-192.png" alt="" width="32" height="32">Live Album</a>
+  <nav aria-label="Site">
+    <a href="./" aria-current="page">Home</a>
+    <a href="guide.html">Guide</a>
+  </nav>
+</header>
 
-<p><a class="play" href="https://play.google.com/store/apps/details?id=com.livealbum.app">Get it on Google Play</a></p>
+<section class="hero">
+  <p class="eyebrow">NFC photo album app for Android</p>
+  <h1>Bring printed photo albums to life</h1>
+  <p class="lead">Put a small NFC sticker behind a photo and link it to a video, a voice note or a song. Then hold your phone over the photo: the moment plays straight away.</p>
+  <a class="badge" href="https://play.google.com/store/apps/details?id=com.livealbum.app"><img src="assets/google-play-badge.png" alt="Get it on Google Play" width="190" height="57"></a>
+  <p class="note">Free to try, with a one-time Pro upgrade. Available in the United Kingdom.</p>
+</section>
 
-<h2>How it works</h2>
+<div class="shots" aria-label="Screenshots">
+  <img src="assets/shot-01-how-it-works.webp" alt="Hold your phone over a photo to play it" width="540" height="960" loading="lazy">
+  <img src="assets/shot-02-video.webp" alt="A photo playing its video" width="540" height="960" loading="lazy">
+  <img src="assets/shot-03-audio.webp" alt="A photo playing a voice note" width="540" height="960" loading="lazy">
+  <img src="assets/shot-04-slideshow.webp" alt="A slideshow with its own soundtrack" width="540" height="960" loading="lazy">
+  <img src="assets/shot-05-album-preview.webp" alt="An album's pages, ready to play" width="540" height="960" loading="lazy">
+  <img src="assets/shot-06-editor-stickers.webp" alt="Linking NFC stickers to pages" width="540" height="960" loading="lazy">
+  <img src="assets/shot-07-share-album.webp" alt="Sharing an album as a gift" width="540" height="960" loading="lazy">
+</div>
+
+<h2>How the NFC photo album works</h2>
+<ol class="steps">
+  <li><span class="tag">Step 1 · Stick</span><strong>Put a sticker behind a photo</strong>A small NFC sticker (also called an NFC tag) goes on the album page, under the photo. Nobody sees it.</li>
+  <li><span class="tag">Step 2 · Link</span><strong>Create the page in the app</strong>Add a video, photos with music, or a recording, then hold the sticker to the back of your phone to link it.</li>
+  <li><span class="tag">Step 3 · Tap</span><strong>Hold your phone over the photo</strong>The page plays straight away, even if Live Album is closed. No camera, QR code or buttons.</li>
+</ol>
+
+<h2>What a photo can play</h2>
+<div class="grid">
+  <div class="card"><h3>Videos</h3><p>From your phone, or YouTube links.</p></div>
+  <div class="card"><h3>Voice notes</h3><p>Messages and recordings in the voices you love.</p></div>
+  <div class="card"><h3>Slideshows with music</h3><p>Several photos, set to your favourite song.</p></div>
+</div>
+
+<h2>Give it as a gift</h2>
+<p>Made a video photo album for someone? Send the album to them in WhatsApp, email or any other app, or straight to a phone next to you. They install Live Album for free, add the album, and the same stickers play on their phone. Lovely for wedding albums, baby books and travel scrapbooks.</p>
+
+<h2>What you need</h2>
 <ul>
-  <li><strong>Put a sticker behind a photo.</strong> Standard NTAG213, NTAG215 or NTAG216 NFC stickers work.</li>
-  <li><strong>Create the page in the app and link it.</strong> Add a video, photos with music, or audio, then hold the sticker to your phone.</li>
-  <li><strong>Hold your phone over the photo.</strong> The memory plays straight away.</li>
-  <li><strong>Share the album</strong> with family as a single file; they play it with the same stickers.</li>
+  <li>An Android phone with NFC.</li>
+  <li>NTAG213, NTAG215 or NTAG216 NFC stickers. Round ones of 25–30 mm fit behind most photos.</li>
+  <li>For bound albums: a ferrite sheet and a piece of aluminium foil behind each sticker, so only the page you hold your phone over plays.</li>
 </ul>
+<p>The <a href="guide.html">guide</a> explains where to put stickers, which ones to buy and what to do if a page doesn't play.</p>
 
 <h2>Private by design</h2>
-<p>No account, no ads and no tracking. Your albums stay on your phone unless you choose to share them.</p>
+<div class="band">
+  <p><strong>Your photos, videos and albums stay on your phone.</strong> No account, no ads and no tracking. Live Album works offline once media is added; only online videos such as YouTube need the internet.</p>
+</div>
 
-<h2>Legal and contact</h2>
-<nav>
-  <a href="privacy-policy.html">Privacy policy</a>
-  <a href="terms.html">Terms of use</a>
-  <a href="mailto:livealbums.espresso550@passmail.net">Contact</a>
-</nav>
+<h2>Questions</h2>
+<details><summary>Does the person I give the album to need anything?</summary>
+<p>An Android phone with NFC and the free Live Album app. They don't need Pro.</p></details>
+<details><summary>Can I change a video after printing the album?</summary>
+<p>Yes. The sticker stays the same; change what the page plays in the app.</p></details>
+<details><summary>What's free and what's Pro?</summary>
+<p>Free gives you one album with up to 5 pages and every page type. Pro is a one-time purchase, no subscription, that unlocks unlimited albums and pages. Playing albums you've been given is always free.</p></details>
+<p><a href="guide.html#questions">More questions in the guide</a></p>
 
 </main>
+<footer>
+  <a href="guide.html">Guide</a>
+  <a href="privacy-policy.html">Privacy policy</a>
+  <a href="terms.html">Terms of use</a>
+  <span>Contact: <a href="mailto:livealbums.espresso550@passmail.net">livealbums.espresso550@passmail.net</a></span>
+</footer>
 </body>
 </html>
